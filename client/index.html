@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaTech College - Real-Time Notification System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>NexaTech College</h1>
+            <p>Real-Time Notification System</p>
+        </div>
+
+        <div class="content">
+
+            <div class="login">
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter username">
+
+                <select id="role">
+                    <option value="Lecturer">Lecturer</option>
+                    <option value="Student">Student</option>
+                </select>
+
+                <button id="connectBtn">Connect</button>
+            </div>
+
+            <div class="info">
+
+                <div class="card">
+                    <h3>Connection Information</h3>
+
+                    <p>
+                        <strong>Status:</strong>
+                        <span id="status" class="status">Disconnected</span>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <strong>Current Server:</strong>
+                        <span id="serverName">Not Connected</span>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Connected Users</h3>
+                    <ul id="users"></ul>
+                </div>
+
+            </div>
+
+            <h3>Messages</h3>
+
+            <div id="messages"></div>
+
+            <div class="sendBox">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type your message...">
+
+                <button id="sendBtn">Send</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
