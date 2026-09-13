@@ -72,8 +72,6 @@ Students can receive real-time notifications from lecturers.
 
 ## Screenshots
 
-*Add screenshots of the application here.*
-
 Example:
 
 ![User Interface](userinterface.png)
@@ -89,7 +87,7 @@ Example:
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
+git clone https://github.com/ameerahasban-oop/PADC_FP
 ```
 
 ### 2. Open the project folder
